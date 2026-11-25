@@ -10,12 +10,22 @@
 
 </div>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/ligus-desktop-dark.png">
+  <img alt="The Ligus desktop app: a chat where people and agents work on a change, and the Review pane with the proposed diff, one approval of two, and Approve and Reject buttons (demo data)" src="images/ligus-desktop-light.png" width="720">
+</picture>
+
 Langstroth is a platform you run yourself. Its client apps are called **Ligus**
-(short for *ligustica*): a shared workspace where you, your teammates and your
-coding agents work in one transcript and one working tree. Agents propose
-changes and people review and apply them. Everything is a signed, append-only
-event log kept on your own devices and synced end to end encrypted, so a relay
-only ever sees ciphertext.
+(short for *ligustica*, the Italian honeybee): the desktop app, `lt` in the
+terminal and the phone app. In a Ligus workspace you, your teammates and your
+coding agents share one transcript and one working tree.
+
+- **Agents propose, people decide.** A change arrives as a proposal with its
+  diff; people vote, approve and apply it.
+- **End-to-end encrypted, self-hostable.** Each device keeps a signed event
+  log; the relay only ever sees ciphertext, and you can run it yourself.
+- **Sandboxed by default.** Every agent turn runs in an OS sandbox, writing
+  only to its chat's worktree.
 
 ## Projects
 
@@ -41,4 +51,4 @@ Installers for every platform are on the [releases page](https://github.com/lang
 - Questions and ideas: GitHub Discussions on the [ligus repository](https://github.com/langstroth-ai/ligus/discussions)
 - Bugs: [issues](https://github.com/langstroth-ai/ligus/issues) on the repository they belong to
 - Security reports: the repository's **Security** tab ("Report a vulnerability")
-- Anything else: support@langstroth.ai
+- Anything else: [Discussions](https://github.com/langstroth-ai/ligus/discussions)
